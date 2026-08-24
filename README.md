@@ -1,8 +1,9 @@
-Overview
+<h1>Overview</h1>
 
 This project builds a machine learning pipeline to identify customers at risk of churning based on historical behavioral, transactional, and demographic data. The goal is to give the retention/marketing team a ranked list of at-risk customers along with the key drivers behind each prediction.
 
-Five classifiers are trained and tuned via grid search, evaluated on held-out test accuracy, and the best-performing model is serialized to disk for reuse.
+<h3> Five classifiers are trained and tuned via grid search, evaluated on held-out test accuracy, and the best-performing model is serialized to disk for reuse.</h3>
+
 
 | Model | Best Params | Accuracy |
 
@@ -17,3 +18,7 @@ Five classifiers are trained and tuned via grid search, evaluated on held-out te
 | Random Forest | `bootstrap=True`, `max_features=2`, `n_estimators=256` | 0.87 |
 
 The tuned **SVM** (linear kernel, `C=0.01`) had the highest test accuracy and is the model saved as `model.pkl`.
+
+<h3>Website Link</h3>
+
+https://customerchurnprediction-vz53hmappppamd7qgbchfzym.streamlit.app/
